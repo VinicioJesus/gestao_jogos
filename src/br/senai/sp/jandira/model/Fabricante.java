@@ -1,24 +1,30 @@
 package br.senai.sp.jandira.model;
 
-public enum Fabricante {
+public class Fabricante {
 	
-	NINTENDO("Nintendo"),
-	TENCENT("Tencent"),
-	ACTIVISIONBLIZZARD("Blizzard"),
-	NETEASE("NetEase"),
-	NEXON("Nexon"),
-	SQUAREENIX("Square Enix"),
-	SONY("Sony"),
-	NETMARBLE("Net Marble");	
+	private String nome;
+	private String sede;
+	private String dataFundacao;
 	
-	private String descricao;
-	
-	private Fabricante(String descricao) {
-		this.descricao = descricao;
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getSede() {
+		return sede;
+	}
+	public void setSede(String sede) {
+		this.sede = sede;
+	}
+	public String getDataFundacao() {
+		return dataFundacao;
+	}
+	public void setDataFundacao(String dataFundacao) {
+		this.dataFundacao = dataFundacao;
 	}
 	
-	public String getDescricao() {
-		return descricao;
-	}
 	
+		
 }
